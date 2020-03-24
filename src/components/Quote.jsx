@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 class Quote extends Component {    
     render() {
+        const { message } = this.props; //destructured
         return (
             <div>
-                <p>Chuck says... {this.props.message} </p>
+                <p>Chuck says... {message} </p>
             </div>
         )
     }
