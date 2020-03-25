@@ -6,11 +6,18 @@ class Quote extends Component {
         this.state = {
             message: "hahahaha",
             message2: "charcuterie rulez",
+            quote: "Fetching a quote...",
         }
     }
 
+    componentDidMount() {
+        this.setState({
+            quote: "here's your quote"
+        })
+    }
+
     render() {
-        const { message, message2 } = this.state; //destructured
+        const { message, message2, Quote } = this.state; //destructured
         return (
             <div>
                 <p>Chuck says... {message2} </p>
